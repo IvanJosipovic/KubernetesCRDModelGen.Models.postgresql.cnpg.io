@@ -15,7 +15,7 @@ namespace KubernetesCRDModelGen.Models.postgresql.cnpg.io;
 /// of the primary node and reset to zero by the operator to trigger
 /// an update.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1FailoverQuorumList : IKubernetesObject<V1ListMeta>, IItems<V1FailoverQuorum>
@@ -38,11 +38,11 @@ public partial class V1FailoverQuorumList : IKubernetesObject<V1ListMeta>, IItem
 
     /// <summary>List of V1FailoverQuorum objects.</summary>
     [JsonPropertyName("items")]
-    public IList<V1FailoverQuorum>? Items { get; set; }
+    public required IList<V1FailoverQuorum> Items { get; set; }
 }
 
 /// <summary>Most recently observed status of the failover quorum.</summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 public partial class V1FailoverQuorumStatus
 {
@@ -78,7 +78,7 @@ public partial class V1FailoverQuorumStatus
 /// of the primary node and reset to zero by the operator to trigger
 /// an update.
 /// </summary>
-[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.2+8c7b4a3647c1e77cd3e3152af5701ec2357dafe9")]
+[global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.5.3+0316f97acf12de380316633df08e7f13a064978d")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1FailoverQuorum : IKubernetesObject<V1ObjectMeta>, IStatus<V1FailoverQuorumStatus?>
